@@ -34,7 +34,7 @@ setup(
     long_description_content_type="text/markdown",
     entry_points={"apache_airflow_provider": ["provider_info=cube_provider.__init__:get_provider_info"]},
     license="Apache License 2.0",
-    packages=find_packages(exclude=["*tests.*", "*tests"]),
+    packages=find_packages(exclude=["*tests.*", "*tests", "*example_dags.", "*example_dags"]),
     install_requires=["apache-airflow>=2.3"],
     setup_requires=["setuptools", "wheel"],
     author="Artem Lytvynov",
